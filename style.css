@@ -693,8 +693,8 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-.footer .p {
-    font-size: 10px;
+.footer .container p {
+    font-size: 15px;
     padding: 18px;
     margin: 18px;
 }
