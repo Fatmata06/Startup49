@@ -17,10 +17,10 @@
 
             <div class="navbar">
                 <nav class="menu">
-                    <a href="#">Accueil</a>
-                    <a href="#">Services</a>
-                    <a href="#">Témoignages</a>
-                    <a href="#">Actualités</a>
+                    <a href="#accueil">Accueil</a>
+                    <a href="#servi">Services</a>
+                    <a href="#temoignage">Témoignages</a>
+                    <a href="#blogs">Actualités</a>
                 </nav>
                 <button class="button">Inscrivez-vous maintenant</button>
             </div>
@@ -28,7 +28,7 @@
     </header>
 
     <main>
-        <section class="home">
+        <section id="accueil" class="home">
             <div class="container home-container">
                 <div class="text-gauche">
                     <h1>Les meilleurs logiciels sont conçus par des développeurs exceptionnels.</h1>
@@ -55,7 +55,7 @@
             </div>
         </section>
 
-        <section class="service">
+        <section id="servi" class="service">
             <div class="container service-container">
                 <div class="description">
                     <p>Caractéristiques de qualité</p>
@@ -151,8 +151,8 @@
                 </div>
 
                 <div class="video">
-
-                    <iframe width="87%" height="560" src="https://www.youtube.com/embed/Cm3U-NgJb9I?si=E18MGs-JVTxxpSYw"
+                    <img src="images/placeholder.jpeg" alt="Image de remplacement" class="video-placeholder">
+                    <iframe class="youtube-video" width="87%" height="560" src="https://www.youtube.com/embed/Cm3U-NgJb9I?si=E18MGs-JVTxxpSYw"
                         title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
                         web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
@@ -160,16 +160,48 @@
             </div>
         </section>
 
-        <section class="témoignages">
-            <div class="container témoignages">
-                <div class="text-droite">
-                    <span>Commentaires des clients</span>
-                    <h4>Pourquoi nos clients nous adorent</h4>
+        <section id="temoignage" class="temoignages">
+            <div class="conteneur">
+                <p class="sous-titre">Commentaires des clients</p>
+                <h2 class="titre-principal">Pourquoi nos clients nous adorent</h2>
+
+                <!-- CITATION -->
+                <p id="citation" class="citation">
+                    Tirer parti des méthodologies agiles pour fournir une synthèse pertinente des grandes orientations.
+                </p>
+
+                <!-- AUTEURS -->
+                <div class="conteneur-auteurs">
+
+                    <div class="auteur actif" data-index="0">
+                        <img src="images/Pierre Hackett.png" class="avatar">
+                        <div class="infos-auteur">
+                            <p class="nom">Pierre Hackett</p>
+                            <p class="fonction">Responsable de la technologie</p>
+                        </div>
+                    </div>
+
+                    <div class="auteur" data-index="1">
+                        <img src="images/Natalia Sanz.png" class="avatar">
+                        <div class="infos-auteur">
+                            <p class="nom">Natalia Sanz</p>
+                            <p class="fonction">Responsable marketing senior</p>
+                        </div>
+                    </div>
+
+                    <div class="auteur" data-index="2">
+                        <img src="images/Ece Akman.png" class="avatar">
+                        <div class="infos-auteur">
+                            <p class="nom">Ece Akman</p>
+                            <p class="fonction">Vice-président de l'ingénierie</p>
+                        </div>
+                    </div>
 
                 </div>
             </div>
-            <div class="container home-container">
-                <div class="text-gauche">
+
+            <div class="container hom-container">
+                <div class="gauche">
                     <h2>Assistance clientèle gratuite pour garantir ce que vous souhaitez accepter</h2>
 
                     <p>Nous proposons une période d'essai sans risque allant jusqu'à deux semaines.
@@ -180,7 +212,7 @@
 
                     <span>Si le développeur vous convient et que vous souhaitez poursuivre, vous pouvez continuer.
                         Dans le cas contraire, nous vous rembourserons ou corrigerons les problèmes.</span>
-                    <a href="#" class="boost-link">
+                    <a href="#" class="temoignages-link">
                         Apprendre encore plus
                         <i class="fa-solid fa-chevron-right "></i>
                     </a>
@@ -191,6 +223,71 @@
                 </div>
             </div>
         </section>
+
+        <!-- BLOG -->
+        <section id="blogs" class="blog">
+            <div class="container blog-container">
+                <div class="text">
+                    <span>Caractéristiques de qualité</span>
+                    <h4>Les tutoriels les plus appréciés des utilisateurs</h4>
+                </div>
+
+                <div class="blog-card">
+
+                    <div class="card">
+                        <img src="images/tutorial-1.png" alt="">
+                        <div class="container">
+                            <a href="#">Comment travailler avec la conception de prototypes grâce aux outils d'Adobe
+                                XD</a>
+                            <div class="comment">
+                                <img src="images/comment-icon.svg" alt="">
+                                <p>15 commentaires</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="images/tutorial-2.png" alt="">
+                        <div class="container">
+                            <a href="#">Créez plusieurs plans de travail à l'aide du développement de prototypes
+                                Figma.</a>
+                            <div class="comment">
+                                <img src="images/comment-icon.svg" alt="">
+                                <p>15 commentaires</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="images/tutorial-3.png" alt="">
+                        <div class="container">
+                            <a href="#">Convertissez facilement le thème de votre mise en page web grâce à l'extension
+                                Sketch Zeplin.</a>
+                            <div class="comment">
+                                <img src="images/comment-icon.svg" alt="">
+                                <p>15 commentaires</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="cta-content">
+                <h2 class="cta-texte">
+                    Engagez les meilleurs développeurs et designers du monde !
+                </h2>
+
+                <div class="cta-deco"></div>
+
+                <a href="#" class="cta-btn">EMBAUCHER DES DÉVELOPPEURS</a>
+            </div>
+        </section>
+
+
     </main>
     <footer class="footer">
         <div class="container">
@@ -205,7 +302,7 @@
                     <a href="#">Commercialisation</a>
                     <a href="#">FAQ</a>
                 </nav>
-                
+
             </div>
         </div>
     </footer>
